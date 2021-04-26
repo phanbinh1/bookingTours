@@ -1,0 +1,64 @@
+.main-top{
+   &__contentStyle-one{
+      @include carouselTop(url(../../src/images/images-search-1.jpg));
+   }
+   &__contentStyle-two{
+      @include carouselTop(url(../../src/images/images-search-2.jpg));
+   }
+   &__contentStyle-three{
+      @include carouselTop(url(../../src/images/images-search-3.jpg));
+   }
+   &__contentStyle-four{
+      @include carouselTop(url(../../src/images/images-search-4.jpg));
+   }
+   &__search{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      &-tour{
+         @include display-flex-justify(flex, column, center);
+         height: 100%;
+         &-content{
+            width: 76rem;
+            min-height: 100px;
+            background: rgba(0, 0, 0, 0.548);
+            border-radius: 0.4rem;
+            padding: 0rem 2rem 0rem 2rem;
+            &-title{
+               color: white;
+               margin: 0;
+               font-weight: 800;
+            }
+            &-amount{
+               color: white;
+               padding: 0rem;
+            }
+            &-address{
+               @include display-justify-align(flex, center, center);
+               width: 100%;
+               min-height: 4rem;
+               background: white;
+               border-radius: 0.4rem;
+               margin-bottom: 1.5rem;
+               img{
+                  position: relative;
+                  left: 0.4rem;
+               }
+            }
+         }
+
+      }
+   }
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+   border: none !important;
+}
+
+.ant-select-open .ant-select-selector {
+   border-color: #d9d9d9 !important;
+   box-shadow: none !important;
+ }
+

@@ -1,0 +1,38 @@
+
+@mixin carouselTop($u){
+   height: 49.2rem;
+   background: {
+      image: $u;
+      repeat: no-repeat;
+      position: center;
+      size: cover;
+   };
+}
+@mixin display-justify($d, $j){
+   display: $d;
+   justify-content: $j;
+}
+@mixin display-align($d, $a){
+   display: $d;
+   align-items: $a;
+}
+@mixin display-justify-align($d, $j, $a){
+   display: $d;
+   justify-content: $j;
+   align-items: $a;
+}
+@mixin display-flex-justify($d, $f, $j){
+   display: $d;
+   flex-direction: $f;
+   justify-content: $j;
+}
+@mixin display-flex($d, $f){
+   display: $d;
+   flex-direction: $f;
+}
+@mixin font-size-weight($s, $w){
+   font: {
+      size: $s;
+      weight: $w;
+   }
+}

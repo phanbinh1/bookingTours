@@ -1,0 +1,63 @@
+.mid{
+   visibility: visible;
+   // min-height: 30.5rem;
+   min-height: 7rem;
+   background-color: rgba(0, 60, 113, 0.13);
+   &__selecive{
+      font-size: 1.8rem;
+      color: $color-blue;
+      &--quality{
+         color: $color-blue;
+         @include font-size-weight(1.8rem, 600);
+      }
+   }
+   &__title-relate-history{
+      font-size: 3.5rem;
+      color: $color-blue;
+      font-weight: 50rem;
+      margin-top: 2rem;
+      @include font-size-weight(3.5rem, 500);
+   }
+}
+//-groupcard
+.box-mid{
+   display: flex !important;
+   background: white;
+   &__img{
+      width: 12rem;
+      height: 12rem;
+   }
+   &__content{
+      // width: 231.56px;
+      padding: 0.3rem 0rem 0rem 1rem;
+      &-div{
+         // width: 20.856rem;
+         height: 8.7rem;
+         &-name{
+            color: $color-blue;
+            @include font-size-weight(1.5rem, bold);
+         }
+
+      }
+      &--price{
+         @include display-justify(flex, flex-end);
+         @include font-size-weight(1.8rem, bold);
+         color: #00C1DE;
+         p{
+            padding: 0;
+            margin: 0;
+         }
+         small{
+            padding-left: 0.2rem;
+         }
+      }
+   }
+   &__delete-card{
+      position: relative;
+      top: -0.4rem;
+      left: -0.1rem;
+   }
+   &:hover{
+      cursor: pointer;
+   }
+}

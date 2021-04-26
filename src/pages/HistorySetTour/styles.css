@@ -1,0 +1,34 @@
+.surround-history-set-tour{
+   background: #ecf0f5;
+   height: 800px;
+}
+.surround-history-user{
+   border-radius: 6px 0px 0px 6px;
+   color: white;
+   min-height: 550px !important;
+   background: rgb(27, 22, 44);
+}
+.surround-history-user-male-circle{
+   display: flex;
+   justify-content: center;
+   color: white;
+   
+}
+.surround-history-information{
+   padding-left: 50px;
+}
+.surround-history-button-comfirm{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+.surround-history-comfirm-password{
+   margin-right: 20px;
+}
+.surround-history-set-tours{
+   color: #003C71;
+   padding: 20px 0px 0px 15px;
+}
+.surround-history-table{
+   padding-right: 20px;
+}

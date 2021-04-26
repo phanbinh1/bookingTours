@@ -1,0 +1,60 @@
+// html{
+//    font-size: 10px;
+// }
+.ant-card-body{
+   padding: 0rem !important;
+}
+#hoverp:hover{
+   background-color: rgba(215, 254, 255, 0.904) !important;
+   color: #00ccff;
+   transition: all .3s ease;
+}
+#hoverp{
+   margin:0;
+   padding: 1rem 0rem 1rem 1rem;
+   cursor: pointer;
+}
+.list{
+   background:#ecf0f5;
+   &__col{
+      margin:0 auto;
+      &-row{
+         margin-top:2rem;
+         &-card{
+            background:white;
+            &-hover{
+               &--place-hot:hover{
+                  background: rgb(116, 116, 116) !important;
+                  transition: all .3s ease;
+               }
+               &--place-active{
+                  color: #00ccff;
+                  transition: all .3s ease;
+               }
+               &--place-hot{
+                  margin:0rem !important;
+                  padding: 1rem 0rem 1rem 1rem !important;
+                  cursor: pointer;
+               }
+            }
+         }
+      }
+   }
+}
+
+.ant-card-head{
+   background-color: #f5f5f5 !important;
+   height: 3.92rem !important;
+   border: 0.1rem solid #ddd !important;
+}
+.ant-card-body{
+   border: 0.1rem solid #ddd;
+   border-top: 0rem;
+}
+
+.ant-card-head-title{
+   height: 3.92rem;
+   position: relative;
+   top: -0.5rem;
+   left: 4.5rem;
+}

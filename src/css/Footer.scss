@@ -1,0 +1,18 @@
+.footer{
+   @include display-align(flex, center);
+   background-color: #f9f9f9;
+   min-height: 40rem;
+   &__ul{
+      @include display-flex(flex, column);
+      list-style: none;
+      padding: 0;
+      li a{
+         color: #818180;
+         size: 1.6rem;
+         direction: none !important;
+      }
+      li a:hover{
+         color: rgb(6, 1, 255);
+      }
+   }
+}

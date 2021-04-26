@@ -1,0 +1,57 @@
+.hover-box-detail{
+   background: white;
+   border: 1px solid white;
+   margin-bottom: 20px;
+}
+.hover-box-detail:hover{
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+   transition: all .3s ease;
+}
+.row-box-list-tour{
+   padding: 15px;
+}
+.img-list-tour{
+   width: 204px;
+   height: 154px;
+}
+.box-name-transports-list-tour{
+   display: flex;
+   flex-direction: column;
+   padding: 0px 0px 0px 15px;
+}
+.box-name-transports-list-tour h2{
+   color: #003C71;
+}
+.box-day-list-tour{
+   padding-left: 2px;
+}
+.box-ransports-list-tour{
+   padding-left: 50px;
+   padding-right: 15px;
+}
+.box-start-day-list-tour{
+   display: flex;
+   justify-content: flex-end;
+   padding-bottom: 5px;
+   
+}
+.box-start-day-list-tour span{
+   color: #003C71;
+}
+.box-apply-list-tour{
+   display: flex;
+   justify-content: flex-end;
+   padding-bottom: 70px;
+}
+.box-apply-list-tour span{
+   color: rgba(129,129,128,.85);
+}
+.box-price-list-tour{
+   float: right;
+   font-size: 22px;
+   font-weight: bold;
+   color: #00C1DE;
+}
+.box-price-list-tour small{
+   padding-left: 2px;
+}

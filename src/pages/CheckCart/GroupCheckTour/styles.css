@@ -1,0 +1,78 @@
+.check-box-tour{
+   background: white;
+   margin-bottom: 20px;
+}
+.check-row-tour{
+   padding: 15px;
+}
+.check-img-tour{
+   width: 204px;
+   height: 154px;
+}
+.check-content-tour{
+   display: flex;
+   flex-direction: column;
+   padding: 0px 0px 0px 15px;
+}
+.check-content-tour h2{
+   color: #003C71;
+}
+.group-check-day{
+   padding-left: 2px;
+}
+.group-check-transports{
+   padding-left: 15px;
+   padding-right: 50px;
+}
+.group-check-place{
+   padding: 2px;
+}
+.group-check-number-users{
+   display: flex;
+   justify-content: flex-end;
+   color: rgba(129,129,128,.85);
+}
+.group-check-delete-tour{
+   position: relative;
+   top: -43px;
+   left: 223px;
+}
+.group-check-index-users{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 34px;
+   margin-bottom: 20px;
+}
+.group-check-index{
+   display: flex;
+   justify-content: center;
+   height: 34px;
+}
+.group-check-index span{
+   position: relative;
+   top: 10px;
+   padding: 0px 10px 0px 10px;
+   border: 1px solid #ccc;
+}
+.group-check-start-day{
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 5px;
+}
+.group-check-start{
+   color: #003C71;
+   padding: 5px;
+}
+.group-check-price-tour{
+   margin: 10px;
+}
+.group-check-price-tour span{
+   float: right;
+   font-size: 22px;
+   font-weight: bold;
+   color: #00C1DE;
+}
+.group-check-price-tour span small{
+   padding-left: 3px;
+}

@@ -1,0 +1,154 @@
+//header
+html{
+   font-size: 10px;
+   box-sizing: border-box;
+}
+.header-container{
+   position: fixed !important;
+   top: 0;
+   width: 100%;
+   z-index: 99;
+   background:$color-blue;
+}
+
+.nav{
+   width: 117rem;
+   padding: {
+      right: 1.5rem;
+      left: 1.5rem;
+   }
+   margin: {
+      right: auto;
+      left: auto;
+   }
+   @include display-justify(flex, center);
+   line-height: 5.2rem;
+   &__logo{
+      @include display-align(flex, center);
+      color: white;
+      font-size: 2.5rem;
+      img:hover{
+         cursor: pointer;
+      }
+   }
+   ul{
+      @include display-align(flex, center);
+      margin: 0rem;
+      list-style: none;
+      margin-right: 1rem;
+      position: relative;
+      li{
+         display: inline-block;
+         margin: 0.5rem;
+         a{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: white;
+            text-decoration: none !important;
+            font-size: 1.8rem;
+            padding: 0.8rem 1rem;
+         }
+         .a--active{
+            color: cyan;
+            border-radius: 0.5rem;
+            // box-shadow: 0 0 0.5rem #33ffff, 0 0 0.5rem #66ffff;
+            transition: all .5s;
+         }
+         a:hover{
+            color: cyan;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 0.5rem #33ffff, 0 0 0.5rem #66ffff;
+            transition: all .5s;
+         }
+
+      }
+      li:hover > ul{
+         top: 7rem;
+         opacity: 1;
+         visibility: visible;
+      }
+
+   }
+
+   &-dropdown{
+      &__account{
+         @include display-align(flex, center);
+         margin-left: 7rem;
+         height: 6.2rem;
+         &-person{
+            height: 3.8rem;
+            width: 3.8rem;
+            margin-right:0.8rem ;
+            background:  $color-blue;
+            border: 0.3rem solid white;
+            border-radius: 50%;
+            @include display-justify-align(flex, center, center);
+         }
+         &-name{
+            font-size: 1.8rem;
+            color: white;
+            padding-right: 1.5rem;
+         }
+         
+      }
+      &__account:hover{
+         cursor: pointer;
+         .nav-dropdown__account-name{
+            color: cyan;
+         }
+      }
+      &--display{
+         padding: 0.5rem 0;
+         transition:.5s ease;
+         position: absolute;
+         background-color: white;
+         width: 24.6rem;
+         z-index: "99";
+         transition:all .5s ease;
+         -webkit-transition: all .5s ease;
+         text-align: center;
+         top: 7rem;
+         &-button{
+            padding: 0rem 3rem;
+         }
+         &-span{
+            cursor: pointer;
+            text-decoration: underline;
+            color: #26bed6;
+            padding-left: 3px;
+         }
+         &-span:hover{
+            opacity: 0.7;
+         }
+      }
+      &--display:before{
+         content: "";
+         position: absolute;
+         top: -1.6rem;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: 1;
+         border: 0.8rem solid;
+         border-color: transparent transparent white transparent;
+      }
+   }
+   &__help{
+      &-phone{
+         position: relative;
+         top: 2px;
+         color: #F79321 !important;
+         text-decoration: none;
+         font-size: 2rem;
+         span{
+            position: relative;
+            top: 1px;
+         }
+      }
+   }
+   
+}
+.hover--active{
+   color: cyan;
+   border-radius: 5px;
+   box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+   transition: all .5s;
+}

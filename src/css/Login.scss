@@ -1,0 +1,37 @@
+.form{
+   &__name-label{
+      color: black;
+      font-weight: 400;
+   }
+   &__field-input{
+      margin: {
+         top: 1rem;
+         bottom: 1rem;
+      }
+   }
+   &__box-button{
+      @include display-justify(flex !important, flex-end);
+      margin-top: 2rem;
+      &--green{
+         border: 1px solid $color-blue;
+         color: $color-blue;
+         border-radius: 0.2rem;
+         padding: 0.4rem 1.4rem;
+         background-color: white;
+         font-weight: 500;
+         transition: all .5s ease;
+      }
+      &--green:hover{
+         border: 1px solid #1890ff;
+         color: #1890ff;
+         font-weight: 500;
+      }
+   }
+}
+
+
+.ant-modal-title{
+   color: $color-blue !important;
+   text-align: center;
+   @include font-size-weight(2.3rem !important, 500 !important);
+}
